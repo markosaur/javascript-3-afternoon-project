@@ -23,7 +23,11 @@ var carDetails = {
 
 //Code Here
 
+const{color, make, model, year} = carDetails
 
+
+
+//save .property values from the object carDetails
 
 ////////// PROBLEM 2 //////////
 
@@ -35,6 +39,8 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
+  
+  const{firstName, lastName, title} = obj;
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -50,11 +56,14 @@ function greeting( obj ) {
   That object will have 4 properties named utah, california, texas and arizona.
   The property values will be numbers.
   Use object destructuring to save the property values to new variables.
-  Sum up the values and return the total number.
+  Sum up the values and return the total number.  
 */
 
 //Code Here
-
+function totalPopulation(obj){
+const {utah, california, texas, arizona} = obj;
+return (utah + california + texas + arizona);
+} 
 
 
 ////////// PROBLEM 4 //////////
